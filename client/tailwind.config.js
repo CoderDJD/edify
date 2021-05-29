@@ -1,16 +1,8 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    colors: {
-      main: "#f38181",
-      accent: "#fce38a",
-      green: {
-        100: "#eaffd0",
-        200: "#95e1d3",
-        300: "#4aa96c",
-      },
-    },
+    extend: {},
   },
   variants: {
     extend: {},
