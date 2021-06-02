@@ -1,11 +1,33 @@
+const colors = require("tailwindcss/colors");
 module.exports = {
-  purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  darkMode: false,
   theme: {
-    extend: {},
+    colors: {
+      gray: colors.coolGray,
+      red: colors.red,
+      yellow: colors.amber,
+      green: colors.emerald,
+      blue: colors.blue,
+      indigo: colors.indigo,
+      purple: colors.violet,
+      pink: colors.pink,
+      white: "#f5f5f5",
+      transparent: "transparent",
+      accent: {
+        default: "#F59E0B",
+        hover: "#FCD34D",
+        disabled: "#FBBF24",
+      },
+      dark: {
+        100: "#91a3b0",
+        200: "#5d7290",
+        300: "#242c37",
+        400: "#151a21",
+        500: "#222831",
+      },
+    },
   },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
+  variants: { scrollbar: ["rounded"] },
+  plugins: [require("tailwind-scrollbar")],
 };
