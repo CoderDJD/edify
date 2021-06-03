@@ -2,10 +2,10 @@ import * as React from "react";
 import PropTypes, { InferProps } from "prop-types";
 
 export default function InputUnit({
-  placeholder,
-  text,
   cb,
+  text,
   value,
+  placeholder,
 }: InferProps<typeof InputUnit.propTypes>) {
   return (
     <input

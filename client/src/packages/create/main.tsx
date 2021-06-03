@@ -12,13 +12,7 @@ export default function Main() {
   return (
     <div>
       <form>
-        
         <label>Class</label>
-        <input placeholder="Name"></input>
-        <input placeholder="Name"></input>
-        <input placeholder="Name"></input>
-        <input placeholder="Name"></input>
-        <input placeholder="Name"></input>
         <input placeholder="Name"></input>
       </form>
     </div>
